@@ -9,9 +9,6 @@ galaxy_info:
     versions:
     - trusty
     - xenial
-  - name: EL
-    versions:
-    - all
   galaxy_tags:
   - system
 dependencies: []
