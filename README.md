@@ -26,7 +26,7 @@ None
 cd tests
 source .hack.sh
 vagrant up
-ansible-playbook test.yaml
+ansible-playbook test.yml
 ...
 ```
 
