@@ -1,4 +1,4 @@
-# Ansible Role - uptest
+# Ansible Role - sysupdate
 
 This role will handle system updates
 
