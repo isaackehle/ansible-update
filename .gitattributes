@@ -1,2 +1,2 @@
-*.rb linguist-language=Ruby
-
+*.yaml linguist-language=Ruby
+*.yml linguist-language=Ruby
