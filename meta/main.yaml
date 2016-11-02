@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Paul Kehle <twitter.com/pgkehle>
+  description: System Up Test
+  company: pgkehle
+  license: BSD
+  min_ansible_version: 1.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+  - name: EL
+    versions:
+    - all
+  galaxy_tags:
+  - system
+dependencies: []

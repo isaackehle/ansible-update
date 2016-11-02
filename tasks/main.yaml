@@ -1,0 +1,56 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+
+#- name: test connection
+#  ping:
+#  tags: apt
+
+#- name: auto remove old packages
+#  apt:
+#    autoremove: yes
+#  become: true
+
+- name: Autoremove unused packages
+  become: true
+  command: apt -y autoremove
+  register: autoremove_output
+#  changed_when: "'The following packages will be REMOVED' in autoremove_output.stdout"
+  changed_when: "'0 upgraded' not in autoremove_output.stdout"
+  tags:
+    - apt
+    - autoremove
+
+- name: Update cache
+  become: true
+  apt:
+    update_cache: yes
+  tags:
+    - apt
+    - updatecache
+
+- name: Update all packages to the latest version
+  become: true
+  apt:
+    upgrade: dist
+  tags:
+    - apt
+    - upgrade
+
+- name: restart machine
+  become: true
+  shell: sleep 2 && shutdown -r now "Ansible updates triggered"
+  async: 1
+  poll: 0
+  ignore_errors: true
+  tags:
+    - restart
+    - now
+
+- name: restart wait
+  become: false
+  local_action: wait_for host={{ inventory_hostname }} state=started delay=10 timeout=300
+#  local_action: wait_for host="{{ inventory_hostname }}" search_regex=OpenSSH delay=10
+  tags:
+    - restart
+    - wait
+
