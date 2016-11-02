@@ -34,7 +34,7 @@
   async: 0
   poll: 0
   ignore_errors: true
-  when: reboot.stdout.find('yes') != -1
+#  when: reboot.stdout.find('yes') != -1
   tags:
     - restart
     - now
