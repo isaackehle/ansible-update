@@ -2,7 +2,7 @@ galaxy_info:
   author: Paul Kehle <twitter.com/pgkehle>
   description: System Up Test
   company: pgkehle
-  license: BSD
+  license: MIT
   min_ansible_version: 1.9
   platforms:
   - name: Ubuntu

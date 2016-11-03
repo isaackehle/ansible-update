@@ -22,19 +22,25 @@ None
 
 ## Hacking
 
+There is an included Vagrant setup for hacking on this module, but IP needs to be set.
+
 ```
 cd tests
 source .hack.sh
 vagrant up
 ansible-playbook test.yml
 ...
+vagrant destroy
+vagrant up
+ansible-playbook test.yml -vvvv
+...
 ```
 
 ## License
 
-BSD
+MIT
 
 ## Author Information
 
 Paul Kehle  
-@pgkehle (twitter, gmail, github, linkedin)
+@pgkehle ([twitter](https://twitter.com/pgkehle), [github](https://github.com/pgkehle), [linkedin](https://www.linkedin.com/in/pgkehle))
