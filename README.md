@@ -1,6 +1,8 @@
-# Ansible Role - sysupdate
+# Ansible Role - update
 
 This role will handle system updates
+
+Available on Ansible Galaxy: [pgkehle.update](https://galaxy.ansible.com/pgkehle/update)
 
 ## Requirements
 
@@ -16,9 +18,11 @@ None
 
 ## Example Playbook
 
-    - hosts: all
-      roles:
-         - pgkehle.sysupdate
+```yml
+- hosts: all
+  roles:
+     - pgkehle.update
+```
 
 ## Hacking
 
