@@ -1,6 +1,6 @@
 # Ansible Role - update
 
-This role will handle system updates
+Handle system updates
 
 Available on Ansible Galaxy: [pgkehle.update](https://galaxy.ansible.com/pgkehle/update)
 

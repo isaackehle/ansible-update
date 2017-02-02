@@ -1,0 +1,22 @@
+{
+  "name": "ansible-update",
+  "version": "0.9.9",
+  "description": "Handle System Updates",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgkehle/ansible-update.git"
+  },
+  "author": "Paul Kehle (pgkehle@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgkehle/ansible-update/issues"
+  },
+  "homepage": "https://github.com/pgkehle/ansible-update#readme",
+  "main": "tasks/main.yml",
+  "keywords": [
+    "ansible"
+  ]
+}
