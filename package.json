@@ -1,6 +1,6 @@
 {
   "name": "ansible-update",
-  "version": "0.9.9",
+  "version": "1.0.0",
   "description": "Handle System Updates",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
