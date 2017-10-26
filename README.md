@@ -52,6 +52,6 @@ Paul Kehle
 ## For local development testing
 
 ```bash
-rsync -av --delete ~/code/ansible-storage-init/* ~/.ansible/roles/pgkehle.storage-init
+rsync -av --delete ~/code/ansible-update/* ~/.ansible/roles/pgkehle.update
 ```
 
