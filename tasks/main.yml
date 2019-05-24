@@ -6,16 +6,17 @@
   apt:
     autoremove: yes
   register: autoremove_output
-#  changed_when: "'The following packages will be REMOVED' in autoremove_output.stdout"
   changed_when: "'0 upgraded' not in autoremove_output.stdout"
   tags:
     - apt
     - autoremove
 
-- name: Update cache
+- name: Install basic needed packages
   become: true
-  apt:
+  apt: 
+    name: [ 'aptitude', 'python3' ]
     update_cache: yes
+    state: present
   tags:
     - apt
     - updatecache
@@ -28,13 +29,10 @@
     - apt
     - upgrade
 
-#  -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
-
 - name: Auto Clean the upgrade utility
   become: true
   command: apt -y autoclean
   register: autoclean_output
-#  changed_when: "'0 upgraded' not in autoremove_output.stdout"
   tags:
     - apt
     - autoclean
