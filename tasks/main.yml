@@ -13,8 +13,8 @@
 
 - name: Install basic needed packages
   become: true
-  apt: 
-    name: [ 'aptitude', 'python3' ]
+  apt:
+    name: ["aptitude", "python3"]
     update_cache: yes
     state: present
   tags:
@@ -36,4 +36,3 @@
   tags:
     - apt
     - autoclean
-
