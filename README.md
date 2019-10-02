@@ -21,14 +21,14 @@ None
 ```yml
 - hosts: all
   roles:
-     - pgkehle.update
+    - pgkehle.update
 ```
 
 ## Hacking
 
 There is an included Vagrant setup for hacking on this module, but IP needs to be set.
 
-```
+```bash
 cd tests
 source .hack.sh
 vagrant up
@@ -40,6 +40,13 @@ ansible-playbook test.yml -vvvv
 ...
 ```
 
+## Linting
+
+```bash
+yamllint -c yamllint.yaml .
+ansible-lint .
+```
+
 ## License
 
 MIT
@@ -48,5 +55,3 @@ MIT
 
 Paul Kehle  
 @pgkehle ([twitter](https://twitter.com/pgkehle), [github](https://github.com/pgkehle), [linkedin](https://www.linkedin.com/in/pgkehle))
-
-

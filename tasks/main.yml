@@ -32,7 +32,7 @@
 - name: Auto Clean the upgrade utility
   become: true
   command: apt -y autoclean
-  register: autoclean_output
+  when: true
   tags:
     - apt
     - autoclean
