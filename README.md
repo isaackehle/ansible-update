@@ -2,7 +2,7 @@
 
 Handle system updates
 
-Available on Ansible Galaxy: [pgkehle.update](https://galaxy.ansible.com/pgkehle/update)
+Available on Ansible Galaxy: [isaackehle.update](https://galaxy.ansible.com/isaackehle/update)
 
 ## Requirements
 
@@ -21,7 +21,7 @@ None
 ```yml
 - hosts: all
   roles:
-    - pgkehle.update
+    - isaackehle.update
 ```
 
 ## Hacking
@@ -53,5 +53,5 @@ MIT
 
 ## Author Information
 
-Paul Kehle  
-@pgkehle ([twitter](https://twitter.com/pgkehle), [github](https://github.com/pgkehle), [linkedin](https://www.linkedin.com/in/pgkehle))
+Isaac Kehle
+@isaackehle ([twitter](https://twitter.com/isaackehle), [github](https://github.com/isaackehle), [linkedin](https://www.linkedin.com/in/isaackehle))

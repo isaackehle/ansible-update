@@ -1,6 +1,6 @@
 {
   "name": "ansible-update",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "Handle System Updates",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgkehle/ansible-update.git"
+    "url": "git+https://github.com/isaackehle/ansible-update.git"
   },
-  "author": "Paul Kehle (pgkehle@gmail.com)",
+  "author": "Isaac Kehle (isaac@kehle.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgkehle/ansible-update/issues"
+    "url": "https://github.com/isaackehle/ansible-update/issues"
   },
-  "homepage": "https://github.com/pgkehle/ansible-update#readme",
+  "homepage": "https://github.com/isaackehle/ansible-update#readme",
   "main": "tasks/main.yml",
   "keywords": [
     "ansible"
